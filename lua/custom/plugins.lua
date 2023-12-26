@@ -65,7 +65,7 @@ local plugins = {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function ()
-      opts = require "plugins.configs.treesitter"
+      local opts = require "plugins.configs.treesitter"
       opts.ensure_installed = {
         "python"
       }
